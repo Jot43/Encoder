@@ -8,7 +8,7 @@ class Config(object):
     API_ID    = os.environ.get("API_ID", "22353942")  # ⚠️ Required
     API_HASH  = os.environ.get("API_HASH", "a71c2aa4f6b764734411512973e34763") # ⚠️ Required
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7397615052:AAFUS3qzFZ1UMNosUmTbT_zX_EO3cBHeEaY") # ⚠️ Required
-    FORCE_SUB = os.environ.get('FORCE_SUB', '+ptaN6FFPBIA3OTM0') # ⚠️ Required
+    FORCE_SUB = os.environ.get('FORCE_SUB', '') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None
    
